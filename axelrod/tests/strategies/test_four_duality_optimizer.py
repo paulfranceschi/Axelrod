@@ -31,7 +31,7 @@ class TestFourDualityOptimizer1(TestPlayer):
 
         actions = [(C, C), (C, C)] + [(C, C)] * 20
         self.versus_test(axl.Retaliate(), expected_actions=actions)
-# Specidif test : consecutive_our_defections < waves_greater_than_one
+# Specific test : consecutive_our_defections < waves_greater_than_one
         player = self.player()
         opponent = axl.Defector()
         player.history = [C, D]
